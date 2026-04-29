@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT 长对话助手 - 隐私政策</title>
+    <meta
+      name="description"
+      content="ChatGPT 长对话助手的隐私政策：本扩展仅在浏览器本地处理页面内容，不上传聊天内容，不使用服务器、统计或追踪服务。"
+    >
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f8fb;
+        --surface: #ffffff;
+        --text: #202124;
+        --muted: #5f6368;
+        --border: rgba(32, 33, 36, 0.12);
+        --accent: #2563eb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #17181c;
+          --surface: #222329;
+          --text: #f7f7f8;
+          --muted: rgba(247, 247, 248, 0.68);
+          --border: rgba(255, 255, 255, 0.14);
+          --accent: #60a5fa;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 16%, transparent), transparent 32rem),
+          var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      article {
+        padding: 34px;
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        background: color-mix(in srgb, var(--surface) 88%, transparent);
+        box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
+        backdrop-filter: blur(16px);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.18;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 34px 0 10px;
+        font-size: 20px;
+      }
+
+      p,
+      li {
+        font-size: 16px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      ul {
+        padding-left: 1.3rem;
+      }
+
+      code {
+        padding: 2px 5px;
+        border-radius: 6px;
+        background: color-mix(in srgb, var(--accent) 10%, transparent);
+        color: var(--accent);
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .notice {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: color-mix(in srgb, var(--accent) 8%, transparent);
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>ChatGPT 长对话助手隐私政策</h1>
+        <p class="meta">生效日期：2026 年 4 月 29 日</p>
+
+        <div class="notice">
+          <strong>简短版本：</strong>
+          本扩展仅在浏览器本地处理 ChatGPT 页面内容，不上传聊天内容，不使用服务器，不使用 analytics、tracking 或广告服务。
+        </div>
+
+        <h2>1. 适用范围</h2>
+        <p>
+          本隐私政策适用于浏览器扩展 <strong>ChatGPT 长对话助手</strong>。
+          该扩展只在以下网站运行：
+        </p>
+        <ul>
+          <li><code>https://chatgpt.com/*</code></li>
+          <li><code>https://chat.openai.com/*</code></li>
+        </ul>
+        <p>扩展不会读取其他网站，也不请求 <code>&lt;all_urls&gt;</code> 权限。</p>
+
+        <h2>2. 扩展访问的数据</h2>
+        <p>
+          扩展会在用户当前浏览器本地访问 ChatGPT 页面中的 DOM 内容，用于提供以下功能：
+        </p>
+        <ul>
+          <li>生成长对话目录。</li>
+          <li>收起较早消息或超长用户消息。</li>
+          <li>标记某条消息。</li>
+          <li>为消息添加本地备注。</li>
+          <li>复制当前消息或本轮问答。</li>
+          <li>生成本地 Markdown 导出预览。</li>
+        </ul>
+        <p>
+          如果用户的 ChatGPT 对话中包含姓名、邮箱、电话、地址或其他可识别个人身份的信息，
+          扩展可能会在本地访问这些页面内容，以完成用户主动触发的阅读、复制或导出操作。
+        </p>
+
+        <h2>3. 不会上传或传输聊天内容</h2>
+        <p>扩展不会将聊天内容上传、传输、出售、共享或发送到任何服务器。</p>
+        <p>扩展不使用远程 API，不使用外部 CDN，不使用统计、追踪或广告 SDK。</p>
+
+        <h2>4. 本地保存的数据</h2>
+        <p>扩展会保存少量功能设置，例如：</p>
+        <ul>
+          <li>是否启用助手。</li>
+          <li>最近保留多少条对话 turn。</li>
+          <li>是否启用自动显示旧消息。</li>
+          <li>是否启用长用户消息自动收起。</li>
+          <li>阅读过滤模式和占位块密度。</li>
+          <li>当前会话的独立设置。</li>
+          <li>已标记 turn 的本地标识。</li>
+          <li>用户手动输入的本地备注。</li>
+        </ul>
+        <p>
+          这些设置保存在浏览器的 <code>chrome.storage.sync</code> 中；
+          如果浏览器不支持 sync storage，则回退到 <code>chrome.storage.local</code>。
+        </p>
+        <p>
+          扩展不会自动把聊天正文写入 storage。备注内容仅来自用户手动输入。
+        </p>
+
+        <h2>5. 权限说明</h2>
+        <p>扩展请求的权限仅用于实现本地功能：</p>
+        <ul>
+          <li><code>storage</code>：保存用户设置、书签标识和用户手动输入的备注。</li>
+          <li><code>https://chatgpt.com/*</code>：在 ChatGPT 页面运行 content script。</li>
+          <li><code>https://chat.openai.com/*</code>：兼容旧 ChatGPT 域名。</li>
+        </ul>
+
+        <h2>6. 第三方共享</h2>
+        <p>
+          扩展不会向第三方共享用户数据。扩展没有服务器端组件，也没有第三方分析或追踪服务。
+        </p>
+
+        <h2>7. 用户控制</h2>
+        <p>
+          用户可以在扩展面板中暂停助手、展开已收起内容、删除备注、取消标记或重置默认设置。
+          用户也可以在浏览器扩展管理页面中随时禁用或卸载扩展。
+        </p>
+
+        <h2>8. 联系方式</h2>
+        <p>
+          如需反馈隐私相关问题，可以通过 GitHub 账号
+          <a href="https://github.com/Johnnycn1213">Johnnycn1213</a>
+          联系开发者。
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
