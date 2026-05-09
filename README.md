@@ -151,7 +151,7 @@ Compress-Archive -Path $paths -DestinationPath $zip -CompressionLevel Optimal
 GitHub Pages 隐私政策页面：
 
 ```text
-https://johnnycn1213.github.io/chatgpt-long-chat-assistant-cn-privacy/
+https://johnnycn1213.github.io/chatgpt-long-chat-assistant-cn/
 ```
 
 这个 URL 可填写到 Microsoft Edge Add-ons 或 Chrome Web Store 的隐私政策 URL 字段。
