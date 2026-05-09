@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT 长对话助手</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="cnlco-popup">
+      <header class="cnlco-popup-header">
+        <div class="cnlco-popup-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M5.5 6.7c0-1.2 1-2.2 2.2-2.2h8.6c1.2 0 2.2 1 2.2 2.2v6.2c0 1.2-1 2.2-2.2 2.2H11l-3.5 3.1v-3.1c-1.1-.1-2-1-2-2.2V6.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M8.7 8.3h6.6M8.7 11.2h4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1>ChatGPT 长对话助手</h1>
+          <p>阅读、收起、本地整理</p>
+        </div>
+      </header>
+
+      <section class="cnlco-popup-card">
+        <div class="cnlco-popup-line">
+          <span>状态</span>
+          <strong id="statusText">读取中</strong>
+        </div>
+        <div class="cnlco-popup-line">
+          <span>当前保留</span>
+          <strong id="keepText">最近 8 条</strong>
+        </div>
+      </section>
+
+      <section class="cnlco-popup-actions">
+        <button id="openChat" type="button" class="cnlco-popup-primary">打开 ChatGPT</button>
+        <button id="toggleEnabled" type="button">暂停助手</button>
+        <button id="resetDefaults" type="button">重置默认设置</button>
+      </section>
+
+      <p class="cnlco-popup-privacy">不上传聊天内容；设置仅保存在浏览器 storage 中。</p>
+    </main>
+
+    <script src="../shared/defaults.js"></script>
+    <script src="../content/storage.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

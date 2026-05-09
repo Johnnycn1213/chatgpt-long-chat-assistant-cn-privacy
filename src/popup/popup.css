@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  color: #0d0d0d;
+  background: #ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cnlco-popup {
+  padding: 16px;
+}
+
+.cnlco-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.cnlco-popup-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+  color: #0d0d0d;
+  background: #f7f7f8;
+}
+
+.cnlco-popup-mark svg {
+  width: 20px;
+  height: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+.cnlco-popup-header p {
+  margin-top: 3px;
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.cnlco-popup-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  background: #f7f7f8;
+  box-shadow: none;
+}
+
+.cnlco-popup-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.cnlco-popup-line span {
+  color: #6b6b6b;
+}
+
+.cnlco-popup-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  height: 36px;
+  border: 0;
+  border-radius: 12px;
+  background: #f4f4f4;
+  color: #0d0d0d;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ececec;
+}
+
+.cnlco-popup-primary {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.cnlco-popup-primary:hover {
+  background: #2f2f2f;
+}
+
+.cnlco-popup-privacy {
+  margin-top: 12px;
+  color: #6b6b6b;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ececec;
+    background: #212121;
+  }
+
+  .cnlco-popup-header p,
+  .cnlco-popup-line span,
+  .cnlco-popup-privacy {
+    color: rgba(247, 247, 248, 0.65);
+  }
+
+  .cnlco-popup-mark {
+    border-color: rgba(255, 255, 255, 0.14);
+    color: #ececec;
+    background: #2f2f2f;
+  }
+
+  .cnlco-popup-card {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: #2f2f2f;
+  }
+
+  button {
+    background: #3a3a3a;
+    color: #ececec;
+  }
+
+  button:hover {
+    background: #444444;
+  }
+
+  .cnlco-popup-primary {
+    background: #ececec;
+    color: #0d0d0d;
+  }
+
+  .cnlco-popup-primary:hover {
+    background: #ffffff;
+  }
+}

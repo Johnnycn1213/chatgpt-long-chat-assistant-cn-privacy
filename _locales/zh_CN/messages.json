@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "ChatGPT 长对话助手",
+    "description": "扩展名称"
+  },
+  "extensionShortName": {
+    "message": "长对话助手",
+    "description": "短名称"
+  },
+  "extensionDescription": {
+    "message": "解决ChatGPT在长对话中的卡顿问题，提供搜索、收起、标记、备注、和批量导出对话的功能。",
+    "description": "商店列表顶部显示的简短描述"
+  }
+}
